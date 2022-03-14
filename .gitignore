@@ -5,3 +5,7 @@
 /postgres_data/pg_multixact/members/.
 /postgres_data/pg_multixact/members/*
 /postgres_data/pg_multixact/members/
+.idea/
+postgres_data/
+customer/customer.iml
+.idea/modules.xml
