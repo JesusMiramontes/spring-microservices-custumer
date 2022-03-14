@@ -4,6 +4,13 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class CustomerService {
+
+    private final CustomerRepository customerRepository;
+
+    public CustomerService(CustomerRepository customerRepository) {
+        this.customerRepository = customerRepository;
+    }
+
     public void registerCustomer(CustomerRegistrationRequest request) {
         CustomerModel customer = CustomerModel.builder()
                 .firstName(request.getFirstName())
@@ -13,6 +20,6 @@ public class CustomerService {
 
         // todo: validate if email is valid
         // todo: validate email is not taken
-        // todo: store customer in db
+        customerRepository.save(customer);
     }
 }

@@ -2,3 +2,6 @@
 /customer/target/maven-archiver/pom.properties
 /.idea/
 /customer/target/
+/postgres_data/pg_multixact/members/.
+/postgres_data/pg_multixact/members/*
+/postgres_data/pg_multixact/members/
